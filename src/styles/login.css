@@ -1,0 +1,222 @@
+.top-header {
+  width: min(1450px, calc(100% - 48px));
+  margin: 0 auto;
+  padding-top: 26px;
+}
+
+.brand-block {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: rgba(255, 255, 255, 0.93);
+  border: 1px solid var(--border);
+  border-radius: 22px 22px 0 0;
+  padding: 24px 30px;
+  box-shadow: 0 -4px 24px rgba(40, 91, 53, 0.05);
+}
+
+.brand-logo {
+  width: 150px;
+  max-width: 40vw;
+  height: auto;
+  flex: 0 0 auto;
+  object-fit: contain;
+  filter: brightness(0);
+}
+
+.brand-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.brand-copy h1 {
+  margin: 0;
+  font-size: clamp(1.8rem, 3vw, 2.7rem);
+  letter-spacing: -0.04em;
+  color: var(--primary-dark);
+}
+
+.header-subtitle {
+  margin: 0;
+  font-size: 0.98rem;
+  color: var(--muted);
+}
+
+.beta-pill {
+  display: inline-block;
+  width: max-content;
+  margin-top: 6px;
+  background: var(--light-green);
+  border: 1px solid var(--light-green-border);
+  color: var(--primary-dark);
+  border-radius: 999px;
+  padding: 0.28rem 0.7rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.demo-banner {
+  margin: 0;
+  padding: 12px 20px 15px;
+  text-align: center;
+  color: var(--primary-dark);
+  background: rgba(255, 255, 255, 0.93);
+  border: 1px solid var(--border);
+  border-top: 1px solid var(--light-green-border);
+  border-radius: 0 0 22px 22px;
+  font-size: 0.98rem;
+  font-weight: 600;
+}
+
+.portal-shell {
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
+}
+
+.portal-shell::before {
+  position: fixed;
+  z-index: -1;
+  inset: -8px;
+  content: '';
+  pointer-events: none;
+  background-image: url('/assets/campus-background.jpeg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: blur(2.5px);
+  transform: scale(1.02);
+}
+
+.portal-shell .page-container {
+  width: min(1450px, calc(100% - 48px));
+  margin: 28px auto 0;
+  align-items: flex-start;
+}
+
+.panel-card.login-panel {
+  width: min(1150px, 100%);
+}
+
+.login-panel .panel-header {
+  padding: 27px 40px 22px;
+}
+
+.login-panel .panel-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.login-panel .form-body {
+  padding: 30px 40px 34px;
+  background: rgba(255, 255, 255, 0.93);
+}
+
+.login-panel .text-input {
+  min-height: 54px;
+  border-color: var(--light-green-border);
+  background: rgba(255, 255, 255, 0.96);
+}
+
+.login-panel .text-input:focus {
+  border-color: var(--leaf-green);
+  box-shadow: 0 0 0 4px rgba(56, 122, 69, 0.12);
+}
+
+.login-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.login-secondary-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+}
+
+.login-panel .secondary-button {
+  background: rgba(255, 255, 255, 0.65);
+  border-color: var(--light-green-border);
+}
+
+.login-panel .primary-button {
+  min-width: 150px;
+  min-height: 50px;
+  border-radius: 10px;
+  background: var(--dark-green);
+}
+
+.login-panel .primary-button:hover {
+  background: var(--hover-green);
+}
+
+.site-footer {
+  width: min(1450px, calc(100% - 48px));
+  margin: 22px auto 28px;
+  padding: 16px 20px 12px;
+  color: var(--muted);
+  text-align: center;
+  font-size: 0.95rem;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9);
+}
+
+.site-footer p {
+  margin: 0 0 8px;
+}
+
+@media (max-width: 640px) {
+  .top-header,
+  .portal-shell .page-container,
+  .site-footer {
+    width: calc(100% - 28px);
+  }
+
+  .top-header {
+    padding-top: 14px;
+  }
+
+  .brand-block {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 18px;
+    border-radius: 18px 18px 0 0;
+  }
+
+  .demo-banner {
+    padding-left: 14px;
+    padding-right: 14px;
+    border-radius: 0 0 18px 18px;
+  }
+
+  .portal-shell .page-container {
+    margin-top: 18px;
+  }
+
+  .login-panel .panel-header,
+  .login-panel .form-body {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .login-actions {
+    align-items: stretch;
+    flex-direction: column-reverse;
+  }
+
+  .login-panel .primary-button {
+    width: 100%;
+  }
+
+  .login-secondary-actions {
+    justify-content: space-between;
+  }
+
+  .site-footer {
+    font-size: 0.82rem;
+  }
+}
