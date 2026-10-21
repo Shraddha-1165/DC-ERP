@@ -18,7 +18,7 @@ export const academicMenuItems = [
 export const hmcMenuItems = [
   {
     title: 'HMC Information',
-    items: ['Hostel Information', 'Room Information', 'Mess Information'],
+    items: ['Hostel and Room Information', 'Mess Information'],
   },
 ]
 

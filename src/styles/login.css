@@ -1,22 +1,22 @@
 .top-header {
-  width: min(1450px, calc(100% - 48px));
+  width: min(1000px, calc(100% - 40px));
   margin: 0 auto;
-  padding-top: 26px;
+  padding-top: 18px;
 }
 
 .brand-block {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 12px;
   background: rgba(255, 255, 255, 0.93);
   border: 1px solid var(--border);
-  border-radius: 22px 22px 0 0;
-  padding: 24px 30px;
-  box-shadow: 0 -4px 24px rgba(40, 91, 53, 0.05);
+  border-radius: 13px 13px 0 0;
+  padding: 16px 20px;
+  box-shadow: 0 -3px 16px rgba(40, 91, 53, 0.05);
 }
 
 .brand-logo {
-  width: 150px;
+  width: 100px;
   max-width: 40vw;
   height: auto;
   flex: 0 0 auto;
@@ -32,40 +32,40 @@
 
 .brand-copy h1 {
   margin: 0;
-  font-size: clamp(1.8rem, 3vw, 2.7rem);
+  font-size: clamp(1.55rem, 2.5vw, 2rem);
   letter-spacing: -0.04em;
   color: var(--primary-dark);
 }
 
 .header-subtitle {
   margin: 0;
-  font-size: 0.98rem;
+  font-size: 0.88rem;
   color: var(--muted);
 }
 
 .beta-pill {
   display: inline-block;
   width: max-content;
-  margin-top: 6px;
+  margin-top: 4px;
   background: var(--light-green);
   border: 1px solid var(--light-green-border);
   color: var(--primary-dark);
   border-radius: 999px;
-  padding: 0.28rem 0.7rem;
-  font-size: 0.72rem;
+  padding: 0.22rem 0.58rem;
+  font-size: 0.68rem;
   font-weight: 700;
 }
 
 .demo-banner {
   margin: 0;
-  padding: 12px 20px 15px;
+  padding: 8px 14px 9px;
   text-align: center;
   color: var(--primary-dark);
   background: rgba(255, 255, 255, 0.93);
   border: 1px solid var(--border);
   border-top: 1px solid var(--light-green-border);
-  border-radius: 0 0 22px 22px;
-  font-size: 0.98rem;
+  border-radius: 0 0 18px 18px;
+  font-size: 0.88rem;
   font-weight: 600;
 }
 
@@ -90,53 +90,51 @@
 }
 
 .portal-shell .page-container {
-  width: min(1450px, calc(100% - 48px));
-  margin: 28px auto 0;
   align-items: flex-start;
 }
 
 .panel-card.login-panel {
-  width: min(1150px, 100%);
+  width: min(800px, 100%);
 }
 
 .login-panel .panel-header {
-  padding: 27px 40px 22px;
+  padding: 18px 26px 14px;
 }
 
 .login-panel .panel-header h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
 .login-panel .form-body {
-  padding: 30px 40px 34px;
+  padding: 20px 26px 22px;
   background: rgba(255, 255, 255, 0.93);
 }
 
 .login-panel .text-input {
-  min-height: 54px;
+  min-height: 38px;
   border-color: var(--light-green-border);
   background: rgba(255, 255, 255, 0.96);
 }
 
 .login-panel .text-input:focus {
   border-color: var(--leaf-green);
-  box-shadow: 0 0 0 4px rgba(56, 122, 69, 0.12);
+  box-shadow: 0 0 0 3px rgba(56, 122, 69, 0.12);
 }
 
 .login-actions {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 18px;
-  margin-top: 18px;
+  gap: 14px;
+  margin-top: 14px;
 }
 
 .login-secondary-actions {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 12px 20px;
+  gap: 9px 16px;
 }
 
 .login-panel .secondary-button {
@@ -145,9 +143,9 @@
 }
 
 .login-panel .primary-button {
-  min-width: 150px;
-  min-height: 50px;
-  border-radius: 10px;
+  min-width: 104px;
+  min-height: 36px;
+  border-radius: 8px;
   background: var(--dark-green);
 }
 
@@ -156,51 +154,54 @@
 }
 
 .site-footer {
-  width: min(1450px, calc(100% - 48px));
-  margin: 22px auto 28px;
-  padding: 16px 20px 12px;
+  width: min(1000px, calc(100% - 40px));
+  margin: 14px auto 16px;
+  padding: 10px 14px 7px;
   color: var(--muted);
   text-align: center;
-  font-size: 0.95rem;
+  font-size: 0.82rem;
   text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9);
 }
 
 .site-footer p {
-  margin: 0 0 8px;
+  margin: 0 0 5px;
 }
 
 @media (max-width: 640px) {
   .top-header,
   .portal-shell .page-container,
   .site-footer {
-    width: calc(100% - 28px);
+    width: calc(100% - 24px);
   }
 
   .top-header {
-    padding-top: 14px;
+    padding-top: 12px;
   }
 
   .brand-block {
     flex-direction: column;
     align-items: flex-start;
-    padding: 18px;
-    border-radius: 18px 18px 0 0;
+    padding: 14px;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .brand-logo {
+    width: 84px;
   }
 
   .demo-banner {
-    padding-left: 14px;
-    padding-right: 14px;
-    border-radius: 0 0 18px 18px;
+    padding: 8px 12px 9px;
+    border-radius: 0 0 12px 12px;
   }
 
   .portal-shell .page-container {
-    margin-top: 18px;
+    margin-top: 14px;
   }
 
   .login-panel .panel-header,
   .login-panel .form-body {
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 14px;
+    padding-right: 14px;
   }
 
   .login-actions {
@@ -217,6 +218,6 @@
   }
 
   .site-footer {
-    font-size: 0.82rem;
+    font-size: 0.76rem;
   }
 }

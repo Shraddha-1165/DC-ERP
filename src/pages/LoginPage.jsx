@@ -333,15 +333,16 @@ export default function LoginPage() {
   )
 
   const renderSignup = (
-    <form onSubmit={handleSignUp} noValidate>
+    <form className="signup-form" onSubmit={handleSignUp} noValidate>
       <div className="panel-header">
         <h2>Sign Up</h2>
         <p>Register your stakeholder details to create a demo portal account.</p>
       </div>
       <div className="form-body">
         {renderStatus}
-        <div className="form-grid">
-          <div className="full-span">
+        <section className="signup-section" aria-labelledby="signup-user-heading">
+          <h3 id="signup-user-heading">New User Sign Up</h3>
+          <div className="signup-fields">
             <SelectField
               label="Stakeholder Type"
               name="stakeholderType"
@@ -350,30 +351,6 @@ export default function LoginPage() {
               placeholder="Select stakeholder type"
               onChange={updateSignUpForm}
             />
-          </div>
-
-          <div className="full-span">
-            <SelectField
-              label="Entrance Exam / Program"
-              name="program"
-              value={signUpForm.program}
-              options={signUpProgramOptions}
-              placeholder="Select program"
-              onChange={updateSignUpForm}
-            />
-          </div>
-
-          <div className="full-span">
-            <FormField
-              label="Registration / Application Number"
-              name="registrationNumber"
-              value={signUpForm.registrationNumber}
-              onChange={updateSignUpForm}
-              placeholder="Enter registration or application number"
-            />
-          </div>
-
-          <div className="full-span">
             <FormField
               label="Stakeholder Code"
               name="stakeholderCode"
@@ -381,9 +358,6 @@ export default function LoginPage() {
               onChange={updateSignUpForm}
               placeholder="Enter stakeholder code"
             />
-          </div>
-
-          <div className="full-span">
             <FormField
               label="Stakeholder Name"
               name="stakeholderName"
@@ -391,11 +365,8 @@ export default function LoginPage() {
               onChange={updateSignUpForm}
               placeholder="Enter stakeholder name"
             />
-          </div>
-
-          <div className="full-span">
             <FormField
-              label="Account email"
+              label="Your Login ID"
               name="loginId"
               type="email"
               value={signUpForm.loginId}
@@ -404,29 +375,6 @@ export default function LoginPage() {
               autoComplete="email"
               required
             />
-          </div>
-
-          <div className="full-span">
-            <FormField
-              label="Alias"
-              name="alias"
-              value={signUpForm.alias}
-              onChange={updateSignUpForm}
-              placeholder="Choose an alias"
-            />
-          </div>
-
-          <div className="full-span">
-            <FormField
-              label="Date of Birth"
-              name="dob"
-              type="date"
-              value={signUpForm.dob}
-              onChange={updateSignUpForm}
-            />
-          </div>
-
-          <div className="full-span">
             <FormField
               label="Password"
               name="password"
@@ -435,71 +383,6 @@ export default function LoginPage() {
               onChange={updateSignUpForm}
               placeholder="Enter password"
             />
-          </div>
-
-          <div className="full-span">
-            <FormField
-              label="Passphrase"
-              name="passphrase"
-              type="password"
-              value={signUpForm.passphrase}
-              onChange={updateSignUpForm}
-              placeholder="Create a passphrase"
-            />
-          </div>
-
-          <div className="full-span">
-            <FormField
-              label="Confirm Passphrase"
-              name="confirmPassphrase"
-              type="password"
-              value={signUpForm.confirmPassphrase}
-              onChange={updateSignUpForm}
-              placeholder="Confirm passphrase"
-            />
-          </div>
-
-          <div className="full-span">
-            <SelectField
-              label="Security Question 1"
-              name="securityQuestionOne"
-              value={signUpForm.securityQuestionOne}
-              options={securityQuestions}
-              placeholder="Select a security question"
-              onChange={updateSignUpForm}
-            />
-          </div>
-          <div className="full-span">
-            <FormField label="Security Answer 1" name="securityAnswerOne" value={signUpForm.securityAnswerOne} onChange={updateSignUpForm} placeholder="Enter your answer" />
-          </div>
-          <div className="full-span">
-            <SelectField
-              label="Security Question 2"
-              name="securityQuestionTwo"
-              value={signUpForm.securityQuestionTwo}
-              options={securityQuestions}
-              placeholder="Select a security question"
-              onChange={updateSignUpForm}
-            />
-          </div>
-          <div className="full-span">
-            <FormField label="Security Answer 2" name="securityAnswerTwo" value={signUpForm.securityAnswerTwo} onChange={updateSignUpForm} placeholder="Enter your answer" />
-          </div>
-          <div className="full-span">
-            <SelectField
-              label="Security Question 3"
-              name="securityQuestionThree"
-              value={signUpForm.securityQuestionThree}
-              options={securityQuestions}
-              placeholder="Select a security question"
-              onChange={updateSignUpForm}
-            />
-          </div>
-          <div className="full-span">
-            <FormField label="Security Answer 3" name="securityAnswerThree" value={signUpForm.securityAnswerThree} onChange={updateSignUpForm} placeholder="Enter your answer" />
-          </div>
-
-          <div className="full-span">
             <FormField
               label="Confirm Password"
               name="confirmPassword"
@@ -510,15 +393,116 @@ export default function LoginPage() {
             />
           </div>
 
-          <div className="full-span">
+          <div className="signup-additional-fields">
+            <SelectField
+              label="Entrance Exam / Program"
+              name="program"
+              value={signUpForm.program}
+              options={signUpProgramOptions}
+              placeholder="Select program"
+              onChange={updateSignUpForm}
+            />
+            <FormField
+              label="Registration / Application Number"
+              name="registrationNumber"
+              value={signUpForm.registrationNumber}
+              onChange={updateSignUpForm}
+              placeholder="Enter registration or application number"
+            />
+          </div>
+        </section>
+
+        <section className="signup-section" aria-labelledby="signup-signature-heading">
+          <h3 id="signup-signature-heading">Digital Signature Information</h3>
+          <div className="signup-fields">
+            <FormField
+              label="Alias"
+              name="alias"
+              value={signUpForm.alias}
+              onChange={updateSignUpForm}
+              placeholder="Choose an alias"
+            />
+            <FormField
+              label="Passphrase"
+              name="passphrase"
+              type="password"
+              value={signUpForm.passphrase}
+              onChange={updateSignUpForm}
+              placeholder="Create a passphrase"
+            />
+            <FormField
+              label="Confirm Passphrase"
+              name="confirmPassphrase"
+              type="password"
+              value={signUpForm.confirmPassphrase}
+              onChange={updateSignUpForm}
+              placeholder="Confirm passphrase"
+            />
+            <div className="signup-signature-control">
+              <button type="button" className="secondary-button" onClick={() => setShowSignature((current) => !current)}>
+                {showSignature ? 'Hide Digital Signature' : 'Add Digital Signature'}
+              </button>
+              {showSignature ? (
+                <div className="signature-input">
+                  <label htmlFor="demo-signature">Digital Signature</label>
+                  <input id="demo-signature" type="text" placeholder="Type your name as a signature" />
+                </div>
+              ) : null}
+            </div>
+          </div>
+        </section>
+
+        <section className="signup-section" aria-labelledby="signup-verification-heading">
+          <h3 id="signup-verification-heading">Information for Verification</h3>
+          <div className="signup-fields">
+            <FormField
+              label="Date of Birth (DD-MM-YYYY)"
+              name="dob"
+              type="date"
+              value={signUpForm.dob}
+              onChange={updateSignUpForm}
+            />
+          </div>
+        </section>
+
+        <section className="signup-section" aria-labelledby="signup-security-heading">
+          <h3 id="signup-security-heading">Security Questions</h3>
+          <p className="security-question-notice">These security questions may be asked during login to verify your identity.</p>
+          <div className="security-question-list">
+            {[
+              { questionLabel: 'First Question', questionName: 'securityQuestionOne', answerLabel: 'First Answer', answerName: 'securityAnswerOne' },
+              { questionLabel: 'Second Question', questionName: 'securityQuestionTwo', answerLabel: 'Second Answer', answerName: 'securityAnswerTwo' },
+              { questionLabel: 'Third Question', questionName: 'securityQuestionThree', answerLabel: 'Third Answer', answerName: 'securityAnswerThree' },
+            ].map(({ questionLabel, questionName, answerLabel, answerName }) => (
+              <div className="security-question-pair" key={questionName}>
+                <SelectField
+                  label={questionLabel}
+                  name={questionName}
+                  value={signUpForm[questionName]}
+                  options={securityQuestions}
+                  placeholder="Select a security question"
+                  onChange={updateSignUpForm}
+                />
+                <FormField
+                  label={answerLabel}
+                  name={answerName}
+                  value={signUpForm[answerName]}
+                  onChange={updateSignUpForm}
+                  placeholder="Enter your answer"
+                />
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="signup-section signup-confirm-section" aria-labelledby="signup-confirm-heading">
+          <h3 id="signup-confirm-heading">Confirm</h3>
+          <div className="signup-fields">
             <CaptchaMock
               value={captchaValue}
               onChange={(event) => setSignUpForm((current) => ({ ...current, captcha: event.target.value }))}
               onRefresh={() => setCaptchaValue(generateCaptcha())}
             />
-          </div>
-
-          <div className="full-span">
             <div className="otp-row">
               <FormField
                 label="Demo OTP"
@@ -530,31 +514,19 @@ export default function LoginPage() {
               <button type="button" className="secondary-button" onClick={handleOtpSend}>
                 Send OTP
               </button>
+              <p className="form-note">Demo OTP: 123456</p>
             </div>
-            <p className="form-note">Demo OTP: 123456</p>
           </div>
 
-          <div className="full-span">
-            <button type="button" className="secondary-button" onClick={() => setShowSignature((current) => !current)}>
-              {showSignature ? 'Hide Digital Signature' : 'Add Digital Signature'}
+          <div className="panel-actions">
+            <button type="button" className="ghost-button" onClick={handleBackToSignIn}>
+              Back to Sign In
             </button>
-            {showSignature ? (
-              <div className="signature-input">
-                <label htmlFor="demo-signature">Digital Signature</label>
-                <input id="demo-signature" type="text" placeholder="Type your name as a signature" />
-              </div>
-            ) : null}
+            <button type="submit" className="primary-button">
+              Sign Up
+            </button>
           </div>
-        </div>
-
-        <div className="panel-actions">
-          <button type="button" className="ghost-button" onClick={handleBackToSignIn}>
-            Back to Sign In
-          </button>
-          <button type="submit" className="primary-button">
-            Create Account
-          </button>
-        </div>
+        </section>
       </div>
     </form>
   )

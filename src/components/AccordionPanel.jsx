@@ -1,6 +1,6 @@
 import { useId } from 'react'
 
-export default function AccordionPanel({ title, items, expanded, onToggle, onSelectItem }) {
+export default function AccordionPanel({ title, items, expanded, onToggle, onSelectItem, children }) {
   const contentId = useId()
 
   return (
@@ -18,19 +18,22 @@ export default function AccordionPanel({ title, items, expanded, onToggle, onSel
         </button>
       </h2>
       <div id={contentId} className="accordion-content" hidden={!expanded}>
-        <ul>
-          {items.map((item) => (
-            <li key={item}>
-              <button
-                type="button"
-                className="submenu-link"
-                onClick={() => onSelectItem?.(item)}
-              >
-                {item}
-              </button>
-            </li>
-          ))}
-        </ul>
+        {children}
+        {items.length > 0 ? (
+          <ul>
+            {items.map((item) => (
+              <li key={item}>
+                <button
+                  type="button"
+                  className="submenu-link"
+                  onClick={() => onSelectItem?.(item)}
+                >
+                  {item}
+                </button>
+              </li>
+            ))}
+          </ul>
+        ) : null}
       </div>
     </section>
   )

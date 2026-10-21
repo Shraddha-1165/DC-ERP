@@ -6,10 +6,10 @@
   --erp-border: #c5dfc8;
   --erp-accent: #34734a;
   --erp-gray: #777777;
-  --erp-space-xs: 0.35rem;
-  --erp-space-sm: 0.65rem;
-  --erp-space-md: 1rem;
-  --erp-space-lg: 1.25rem;
+  --erp-space-xs: 0.25rem;
+  --erp-space-sm: 0.45rem;
+  --erp-space-md: 0.7rem;
+  --erp-space-lg: 0.9rem;
 }
 
 .erp-dashboard {
@@ -18,18 +18,18 @@
   background: #fff;
   color: #333333;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .erp-topbar {
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  min-height: 78px;
-  padding: 0 20px;
+  min-height: 56px;
+  padding: 0 14px;
   display: flex;
   align-items: center;
-  gap: 44px;
+  gap: 28px;
   color: #fff;
   border-radius: 0 0 4px 4px;
 }
@@ -49,7 +49,7 @@
 }
 
 .erp-brand {
-  font-size: 24px;
+  font-size: 17px;
   font-weight: 700;
   white-space: nowrap;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
@@ -62,23 +62,23 @@
 }
 
 .topbar-user {
-  gap: 34px;
+  gap: 22px;
   margin-left: auto;
   text-align: right;
-  font-size: 18px;
+  font-size: 13px;
 }
 
 .topbar-action {
-  min-height: 44px;
+  min-height: 32px;
   padding: 5px 0;
   display: inline-flex;
   align-items: center;
-  gap: 7px;
+  gap: 6px;
   color: #fff;
   background: transparent;
   border: 0;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 13px;
   white-space: nowrap;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
@@ -88,8 +88,8 @@
 }
 
 .erp-icon {
-  width: 25px;
-  height: 25px;
+  width: 18px;
+  height: 18px;
   fill: none;
   stroke: currentColor;
   stroke-width: 2;
@@ -102,30 +102,30 @@
 }
 
 .module-navigation {
-  min-height: 92px;
-  padding: 0 22px 0 44px;
+  min-height: 64px;
+  padding: 0 14px 0 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 22px;
+  gap: 16px;
   border-bottom: 1px solid #d8d8d8;
 }
 
 .module-links {
   display: flex;
   align-items: center;
-  gap: 42px;
+  gap: 28px;
 }
 
 .module-link {
-  padding: 12px 0;
+  padding: 8px 0;
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 5px;
   border: 0;
   background: transparent;
   color: #777;
-  font-size: 22px;
+  font-size: 15px;
   font-weight: 700;
 }
 
@@ -138,8 +138,8 @@
 }
 
 .module-icon {
-  width: 34px;
-  height: 34px;
+  width: 24px;
+  height: 24px;
   fill: currentColor;
   stroke: currentColor;
   stroke-width: 1.5;
@@ -149,20 +149,20 @@
 
 .search-menu {
   position: relative;
-  width: min(278px, 100%);
+  width: min(190px, 100%);
   z-index: 4;
 }
 
 .search-menu input {
   width: 100%;
-  min-height: 56px;
-  padding: 10px 16px;
+  min-height: 39px;
+  padding: 7px 10px;
   border: 1px solid #ccc;
   border-radius: 6px;
   background: #fff;
   color: #555;
   font: inherit;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .search-menu input:focus-visible {
@@ -181,7 +181,7 @@
   top: calc(100% + 4px);
   left: 0;
   right: 0;
-  max-height: 320px;
+  max-height: 260px;
   margin: 0;
   padding: 4px 0;
   overflow-y: auto;
@@ -194,7 +194,7 @@
 
 .search-result {
   width: 100%;
-  padding: 9px 12px;
+  padding: 7px 10px;
   display: flex;
   justify-content: space-between;
   gap: 10px;
@@ -215,7 +215,7 @@
 }
 
 .search-empty {
-  padding: 12px;
+  padding: 9px;
   color: #666;
 }
 
@@ -232,11 +232,11 @@
 }
 
 .erp-breadcrumb {
-  min-height: 54px;
-  padding: 13px 22px;
+  min-height: 38px;
+  padding: 8px 16px;
   background: #f5f5f5;
   color: #666;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .erp-breadcrumb span {
@@ -244,44 +244,44 @@
 }
 
 .home-panels {
-  padding: 30px 19px 0;
+  padding: 20px 14px 0;
 }
 
 .home-panel {
   overflow: hidden;
-  margin: 0 0 30px;
+  margin: 0 0 20px;
   border: 1px solid var(--erp-border);
   border-radius: 5px;
 }
 
 .home-panel h2 {
-  min-height: 57px;
+  min-height: 42px;
   margin: 0;
-  padding: 12px 22px;
+  padding: 8px 15px;
   background: var(--erp-panel);
   border-bottom: 1px solid var(--erp-border);
   color: var(--erp-accent);
-  font-size: 24px;
+  font-size: 17px;
   font-weight: 400;
   line-height: 1.35;
 }
 
 .home-panel-content {
-  min-height: 96px;
-  padding: 10px 16px;
+  min-height: 76px;
+  padding: 8px 12px;
   background: #fff;
 }
 
 .home-panel:nth-child(2) .home-panel-content {
-  min-height: 30px;
+  min-height: 24px;
 }
 
 .accordion-list {
-  padding: 7px 0 0;
+  padding: 6px 0 0;
 }
 
 .accordion-panel {
-  margin: 0 0 8px;
+  margin: 0 0 6px;
 }
 
 .accordion-heading {
@@ -292,17 +292,17 @@
 
 .accordion-trigger {
   width: 100%;
-  min-height: 52px;
-  padding: 8px 22px;
+  min-height: 36px;
+  padding: 6px 14px;
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 9px;
   background: var(--erp-panel);
   border: 1px solid var(--erp-border);
   border-radius: 5px;
   color: var(--erp-accent);
   font: inherit;
-  font-size: 20px;
+  font-size: 15px;
   text-align: left;
 }
 
@@ -311,22 +311,22 @@
 }
 
 .accordion-symbol {
-  width: 19px;
-  height: 19px;
+  width: 15px;
+  height: 15px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  flex: 0 0 19px;
+  flex: 0 0 15px;
   border-radius: 3px;
   color: #fff;
   background: var(--erp-primary);
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 1;
 }
 
 .accordion-content {
-  padding: 12px 56px 15px;
+  padding: 8px 36px 10px;
   border: 1px solid var(--erp-border);
   border-top: 0;
   background: #fff;
@@ -339,7 +339,7 @@
 }
 
 .accordion-content li + li {
-  margin-top: 8px;
+  margin-top: 6px;
 }
 
 .submenu-link {
@@ -349,7 +349,7 @@
   background: transparent;
   color: var(--erp-accent);
   font: inherit;
-  font-size: 16px;
+  font-size: 12px;
   text-align: left;
   cursor: pointer;
 }
@@ -359,10 +359,143 @@
   text-decoration: underline;
 }
 
+.hmc-information {
+  display: grid;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.hmc-demo-label {
+  margin: 0;
+  color: var(--erp-gray);
+  font-size: 11px;
+  font-style: italic;
+}
+
+.hmc-information-section {
+  padding: 10px;
+  border: 1px solid var(--erp-border);
+  border-radius: 5px;
+  background: #fff;
+}
+
+.hmc-information-section h2,
+.hmc-information-section h3 {
+  margin: 0 0 8px;
+  color: var(--erp-primary-dark);
+  font-size: 14px;
+}
+
+.hmc-information-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin: 0;
+}
+
+.hmc-information-field {
+  min-width: 0;
+  padding: 7px 8px;
+  border-radius: 4px;
+  background: #f7faf7;
+}
+
+.hmc-information-field dt {
+  margin-bottom: 3px;
+  color: #666;
+  font-size: 11px;
+}
+
+.hmc-information-field dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+  color: #333;
+  font-weight: 600;
+}
+
+.hmc-information-unavailable {
+  margin: 0;
+  color: #666;
+}
+
+.mess-document-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.mess-document {
+  min-width: 0;
+  padding: 8px;
+  display: grid;
+  align-content: start;
+  gap: 5px;
+  border: 1px solid var(--erp-border);
+  border-radius: 4px;
+  background: #f7faf7;
+  color: #444;
+}
+
+.mess-document.selected {
+  border-color: var(--erp-primary);
+  background: var(--erp-panel);
+}
+
+.mess-document-selected {
+  width: fit-content;
+  padding: 2px 6px;
+  border-radius: 99px;
+  background: #fff;
+  color: var(--erp-primary-dark);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.mess-document-unavailable {
+  color: #666;
+  font-size: 12px;
+}
+
+.mess-document code {
+  overflow-wrap: anywhere;
+  color: #555;
+  font-size: 11px;
+}
+
+.mess-nil {
+  margin: 0;
+  color: #333;
+  font-weight: 600;
+}
+
+.mess-change-form {
+  display: grid;
+  gap: 12px;
+  max-width: 500px;
+}
+
+.mess-change-status {
+  margin: 0;
+  padding: 8px 10px;
+  border-radius: 4px;
+}
+
+.mess-change-status.error {
+  border: 1px solid #e4c0bd;
+  background: #fff5f4;
+  color: #982d28;
+}
+
+.mess-change-status.success {
+  border: 1px solid var(--erp-border);
+  background: #f3f8f3;
+  color: var(--erp-primary-dark);
+}
+
 .erp-demo-label {
-  padding: 14px 20px;
+  padding: 9px 14px;
   color: #777;
-  font-size: 13px;
+  font-size: 10px;
   text-align: center;
 }
 
@@ -376,18 +509,18 @@
 }
 
 .erp-detail-page {
-  padding: 0 19px 32px;
+  padding: 0 16px 24px;
 }
 
 .detail-breadcrumb {
-  min-height: 48px;
-  padding: 10px 4px;
+  min-height: 40px;
+  padding: 8px 4px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 9px;
+  gap: 7px;
   color: #555;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .detail-breadcrumb button {
@@ -409,13 +542,13 @@
 }
 
 .detail-page-heading {
-  margin: 3px 0 18px;
+  margin: 3px 0 14px;
 }
 
 .detail-page-heading h1 {
   margin: 0 0 4px;
   color: var(--erp-primary-dark);
-  font-size: 26px;
+  font-size: 18px;
   font-weight: 600;
   letter-spacing: 0;
 }
@@ -427,15 +560,15 @@
 
 .attendance-filters {
   display: grid;
-  grid-template-columns: repeat(2, minmax(180px, 300px));
-  gap: 18px;
-  margin: 18px 0;
+  grid-template-columns: repeat(2, minmax(140px, 230px));
+  gap: 11px;
+  margin: 11px 0;
 }
 
 .erp-field {
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 5px;
 }
 
 .erp-field label {
@@ -446,8 +579,8 @@
 .erp-field select,
 .erp-field input {
   width: 100%;
-  min-height: 42px;
-  padding: 8px 11px;
+  min-height: 36px;
+  padding: 6px 9px;
   border: 1px solid #c7d1c8;
   border-radius: 4px;
   background: #fff;
@@ -464,13 +597,13 @@
 .attendance-summary {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
-  margin: 16px 0 20px;
+  gap: 8px;
+  margin: 10px 0 13px;
 }
 
 .attendance-summary > div {
-  min-height: 84px;
-  padding: 13px 16px;
+  min-height: 58px;
+  padding: 8px 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -481,12 +614,12 @@
 
 .summary-label {
   color: #555;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .attendance-summary strong {
   color: var(--erp-primary-dark);
-  font-size: 23px;
+  font-size: 17px;
 }
 
 .attendance-table-wrap {
@@ -498,14 +631,14 @@
 
 .attendance-table {
   width: 100%;
-  min-width: 680px;
+  min-width: 620px;
   border-collapse: collapse;
   background: #fff;
 }
 
 .attendance-table th,
 .attendance-table td {
-  padding: 12px 14px;
+  padding: 7px 9px;
   border-bottom: 1px solid #e3e9e3;
   text-align: left;
   vertical-align: middle;
@@ -527,7 +660,7 @@
 }
 
 .attendance-result {
-  min-width: 190px;
+  min-width: 140px;
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -535,7 +668,7 @@
 
 .attendance-progress {
   width: 100%;
-  height: 10px;
+  height: 8px;
   border: 0;
   border-radius: 99px;
   overflow: hidden;
@@ -575,7 +708,7 @@
 }
 
 .attendance-status {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
 }
 
@@ -592,17 +725,17 @@
 }
 
 .demo-notice {
-  margin: 14px 0 0;
-  padding: 10px 12px;
+  margin: 9px 0 0;
+  padding: 7px 9px;
   border-left: 3px solid var(--erp-primary);
   background: #f3f8f3;
   color: #4e5d4f;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .document-instructions {
-  margin: 12px 0 18px;
-  padding: 13px 15px;
+  margin: 8px 0 11px;
+  padding: 8px 10px;
   border: 1px solid var(--erp-border);
   border-radius: 4px;
   background: #f5faf5;
@@ -617,14 +750,14 @@
 }
 
 .application-number {
-  max-width: 420px;
-  margin-bottom: 18px;
+  max-width: 300px;
+  margin-bottom: 11px;
 }
 
 .application-number small,
 .document-help {
   color: var(--erp-gray);
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .document-checklist {
@@ -632,7 +765,7 @@
 }
 
 .document-row {
-  padding: 15px 0;
+  padding: 9px 0;
   border-bottom: 1px solid var(--erp-border);
 }
 
@@ -640,21 +773,21 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 9px;
+  gap: 6px;
+  margin-bottom: 6px;
 }
 
 .document-row-heading h2 {
   margin: 0;
   color: #333;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 600;
 }
 
 .requirement-badge {
-  padding: 3px 8px;
+  padding: 2px 6px;
   border-radius: 99px;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
 }
 
@@ -669,17 +802,17 @@
 }
 
 .document-file-controls {
-  min-height: 37px;
+  min-height: 26px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 10px;
+  gap: 6px;
 }
 
 .document-file-button,
 .document-remove {
-  min-height: 34px;
-  padding: 6px 11px;
+  min-height: 25px;
+  padding: 4px 8px;
   display: inline-flex;
   align-items: center;
   border: 1px solid var(--erp-primary);
@@ -687,7 +820,7 @@
   background: #fff;
   color: var(--erp-primary-dark);
   font: inherit;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   cursor: pointer;
 }
@@ -698,7 +831,7 @@
 }
 
 .document-filename {
-  max-width: 300px;
+  max-width: 260px;
   overflow: hidden;
   color: #555;
   text-overflow: ellipsis;
@@ -707,7 +840,7 @@
 
 .document-status {
   color: #666;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .document-status.selected {
@@ -725,7 +858,7 @@
   min-height: 0;
   margin-top: 4px;
   color: #982d28;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .document-error:empty {
@@ -734,60 +867,62 @@
 
 @media (max-width: 900px) {
   .erp-topbar {
-    min-height: auto;
-    min-height: 78px;
-    padding: 14px 18px;
+    min-height: 56px;
+    padding: 9px 14px;
     flex-wrap: wrap;
-    gap: 12px 24px;
+    gap: 8px 16px;
   }
 
   .erp-brand {
-    font-size: 23px;
+    font-size: 17px;
   }
 
   .topbar-user {
     flex-wrap: wrap;
-    gap: 8px 22px;
-    font-size: 17px;
+    gap: 6px 14px;
+    font-size: 13px;
   }
 }
 
 @media (max-width: 620px) {
   .erp-topbar {
-    align-items: flex-start;
-    flex-direction: column;
+    align-items: center;
+    gap: 8px 14px;
   }
 
   .topbar-home {
-    order: 2;
+    order: 1;
   }
 
   .topbar-user {
-    order: 3;
+    order: 2;
+    width: 100%;
     margin-left: 0;
-    align-items: flex-start;
-    flex-direction: column;
-    text-align: left;
+    justify-content: space-between;
+    gap: 6px 12px;
+    text-align: right;
   }
 
   .module-navigation {
-    padding: 12px 16px;
-    align-items: stretch;
+    padding: 10px 14px;
+    align-items: center;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
   }
 
   .module-links {
-    gap: 25px;
+    gap: 20px;
   }
 
   .module-link {
-    font-size: 19px;
+    padding: 5px 0;
+    gap: 5px;
+    font-size: 15px;
   }
 
   .module-icon {
-    width: 28px;
-    height: 28px;
+    width: 22px;
+    height: 22px;
   }
 
   .search-menu {
@@ -795,43 +930,52 @@
   }
 
   .search-menu input {
-    min-height: 48px;
-    font-size: 17px;
+    min-height: 38px;
+    padding: 7px 10px;
+    font-size: 14px;
   }
 
   .erp-breadcrumb {
-    min-height: 48px;
-    padding: 11px 16px;
-    font-size: 17px;
+    min-height: 36px;
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+
+  .hmc-information-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .mess-document-list {
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .home-panels {
-    padding: 16px 12px 0;
+    padding: 12px 10px 0;
   }
 
   .home-panel {
-    margin-bottom: 18px;
+    margin-bottom: 14px;
   }
 
   .home-panel h2 {
-    min-height: 50px;
-    padding: 11px 15px;
-    font-size: 20px;
+    min-height: 40px;
+    padding: 8px 12px;
+    font-size: 17px;
   }
 
   .home-panel-content {
-    height: 72px;
+    min-height: 58px;
   }
 
   .accordion-trigger {
-    min-height: 52px;
-    padding: 9px 14px;
-    gap: 12px;
-    font-size: 19px;
+    min-height: 38px;
+    padding: 6px 12px;
+    gap: 9px;
+    font-size: 15px;
   }
 
   .accordion-content {
-    padding: 12px 45px;
+    padding: 9px 32px;
   }
 
   .erp-detail-page {
@@ -844,7 +988,7 @@
   }
 
   .attendance-summary > div {
-    min-height: 72px;
+    min-height: 60px;
   }
 
   .document-filename {
