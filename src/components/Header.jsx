@@ -13,7 +13,6 @@ export default function Header() {
           <span className="beta-pill">Beta Version</span>
         </div>
       </div>
-      <p className="demo-banner">Demo / Educational Mockup</p>
     </header>
   )
 }

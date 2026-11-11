@@ -1,8 +1,9 @@
 export const demoUsers = [
   {
-    loginId: 'demo.student',
-    password: 'Demo@123',
-    name: 'Demo Student',
+    loginId: 'abc@iitj.ac.in',
+    password: 'ABCD@1234',
+    name: 'ABC',
+    demoId: 'ABC1001',
     studentId: 'DEMO1001',
     role: 'Student',
   },

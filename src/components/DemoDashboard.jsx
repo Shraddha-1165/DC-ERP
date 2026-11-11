@@ -126,7 +126,6 @@ export default function DemoDashboard({ user, onLogout }) {
           />
         ) : null}
       </main>
-      <div className="erp-demo-label">Demo / Educational Mockup</div>
     </div>
   )
 }

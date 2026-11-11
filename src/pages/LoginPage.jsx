@@ -1,6 +1,5 @@
 import { useMemo, useState } from 'react'
 import Header from '../components/Header'
-import Footer from '../components/Footer'
 import FormField from '../components/FormField'
 import SelectField from '../components/SelectField'
 import CaptchaMock from '../components/CaptchaMock'
@@ -260,7 +259,7 @@ export default function LoginPage() {
     <form onSubmit={handleSignIn} noValidate>
       <div className="panel-header">
         <h2>Sign In</h2>
-        <p>Sign in with your ERP demo account.</p>
+        <p>Sign in to your ERP account.</p>
       </div>
       <div className="form-body signin-form-body">
         {renderStatus}
@@ -707,7 +706,6 @@ export default function LoginPage() {
       <main className="page-container">
         <div className={`panel-card${view === 'signin' ? ' login-panel' : ''}`}>{activeView}</div>
       </main>
-      <Footer />
     </div>
   )
 }

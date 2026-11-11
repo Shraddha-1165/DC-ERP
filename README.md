@@ -13,7 +13,7 @@ The sign-in page uses local demo accounts:
 
 | Login ID | Password |
 | --- | --- |
-| `demo.student` | `Demo@123` |
+| `abc@iitj.ac.in` | `ABCD@1234` |
 | `demo.staff` | `Staff@123` |
 | `demo.admin` | `Admin@123` |
 
